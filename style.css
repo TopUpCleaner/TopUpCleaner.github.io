@@ -1,0 +1,190 @@
+{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: Arial, sans-serif;
+font-size: 16px;
+line-height: 1.5;
+color: #333;
+}
+
+header {
+background-color: #333;
+color: #fff;
+padding: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+}
+
+nav ul li {
+margin-right: 20px;
+}
+
+nav ul li a {
+color: #fff;
+text-decoration: none;
+}
+
+.hero {
+background-color: #f2f2f2;
+padding: 50px;
+text-align: center;
+}
+
+.hero h2 {
+font-size: 36px;
+margin-bottom: 20px;
+}
+
+.hero p {
+font-size: 20px;
+margin-bottom: 40px;
+}
+
+.cta {
+background-color: #333;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+transition: background-color 0.3s ease-in-out;
+}
+
+.cta:hover {
+background-color: #555;
+}
+
+.services {
+background-color: #fff;
+padding: 50px;
+text-align: center;
+}
+
+.services h2 {
+font-size: 36px;
+}
+.services h2 {
+font-size: 36px;
+margin-bottom: 20px;
+}
+
+.services p {
+font-size: 20px;
+margin-bottom: 40px;
+}
+
+.services ul {
+list-style: none;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-bottom: 40px;
+}
+
+.services li {
+background-color: #f2f2f2;
+padding: 20px;
+margin: 10px;
+border-radius: 5px;
+flex: 1 1 300px;
+min-width: 200px;
+max-width: 400px;
+text-align: center;
+}
+
+.services li:hover {
+background-color: #ddd;
+}
+
+.testimonials {
+background-color: #f2f2f2;
+padding: 50px;
+text-align: center;
+}
+
+.testimonials h2 {
+font-size: 36px;
+margin-bottom: 20px;
+}
+
+.testimonial {
+background-color: #fff;
+padding: 20px;
+margin-bottom: 20px;
+border-radius: 5px;
+}
+
+.testimonial p:last-child {
+margin-top: 10px;
+font-weight: bold;
+}
+
+footer {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+
+/* Animations */
+.cta {
+animation-name: ctaFadeIn;
+animation-duration: 1s;
+animation-delay: 2s;
+animation-fill-mode: forwards;
+}
+
+@keyframes ctaFadeIn {
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+li {
+animation-name: serviceFadeIn;
+animation-duration: 1s;
+animation-fill-mode: forwards;
+}
+
+@keyframes serviceFadeIn {
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+.testimonial {
+animation-name: testimonialFadeIn;
+animation-duration: 1s;
+animation-fill-mode: forwards;
+}
+
+@keyframes testimonialFadeIn {
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
